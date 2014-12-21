@@ -29,6 +29,6 @@ oracle-java7-set-default \
 && ln -s /opt/$SOLR /opt/solr
 # Need to add unit files that do
 # CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f"]
-RUN systemctl enable solr.service
+# RUN systemctl enable solr.service
 EXPOSE 8983
 ENTRYPOINT ["/lib/systemd/systemd"]
